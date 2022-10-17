@@ -12,10 +12,12 @@ async function getHome(req, res, next) {
   }
 }
 async function getProduct(req, res, next) {
-  const productId = String(req.params.id);
+  const productId = req.params.id;
 
   try {
-    const product = await Product.findById(productId);
+    let product;
+
+    if (productId) product = await Product.findById(productId);
 
     if (product) {
       res.status(201).json({ product: product });

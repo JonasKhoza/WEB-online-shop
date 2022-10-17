@@ -31,10 +31,7 @@ class Product {
   }
 
   static findById(id) {
-    return db
-      .getDb()
-      .collection("products")
-      .findOne({ _id: new ObjectId(id) });
+    return db.getDb().collection("products").findOne({ _id: id });
   }
 
   updateProduct() {

@@ -41,10 +41,9 @@ app.use("/users", userRoutes);
 app.use("/cart", cartRoutes);
 app.use("/orders", ordersRoutes);
 
-const __dirname = path.resolve();
-app.use(express.static(path.join(__dirname, "frontend/build")));
+app.use(express.static(path.join(path.resolve(), "frontend/build")));
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/frontend/build/index.html"));
+  res.sendFile(path.join(path.resolve(), "/frontend/build/index.html"));
 });
 //Server error handler
 app.use(function (error, req, res, next) {
