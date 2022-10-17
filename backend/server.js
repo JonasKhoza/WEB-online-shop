@@ -1,3 +1,4 @@
+const path = require("path");
 const express = require("express");
 const app = express();
 const cors = require("cors");
@@ -40,6 +41,11 @@ app.use("/users", userRoutes);
 app.use("/cart", cartRoutes);
 app.use("/orders", ordersRoutes);
 
+const __dirname = path.resolve();
+app.use(express.static(path.join(__dirname, "frontend/build")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "/frontend/build/index.html"));
+});
 //Server error handler
 app.use(function (error, req, res, next) {
   res.status(500).json({ message: error.message });
