@@ -17,8 +17,8 @@ function sessionStore(store) {
     saveUninitialized: false,
     store: store,
     cookie: {
-      sameSite: false, //This helps prevent CSRF attacks but best used in production mode not necessary for development mode
-      maxAge: 2 * 24 * 60 * 60 * 1000,
+      sameSite: true, //This helps prevent CSRF attacks but best used in production mode not necessary for development mode
+      maxAge: process.env.EXPIRES * 1000,
       SameSite: "Lax",
       Path: "/",
       httpOnly: true,
