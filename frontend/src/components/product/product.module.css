@@ -1,0 +1,105 @@
+.products_grid {
+  margin-top: 3rem;
+  margin-left: 0;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(14.5rem, 1fr));
+  gap: 2rem;
+  list-style: none;
+}
+.product_details {
+  border-radius: 5px;
+  background-color: var(--sixth-gray);
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+
+.product_details img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.product_item_content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px;
+}
+.product_item-content h2 {
+  font-size: 1.3rem;
+  margin: 2rem 0;
+}
+
+.product_items_actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* or whatever you like 
+<div style="width: 100%; background-color: red;">
+    <button type="button">A</button>
+    <button type="button">B</button>
+    <button type="button">C</button>
+    <button type="button">D</button>
+    <button type="button">E</button>
+</div>
+div {
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  width: 100%;
+  margin: 5px;  or whatever you like 
+}
+
+*/
+
+.edit {
+  padding: 1px 1.5rem;
+  color: var(--primary-gray4);
+  background-color: transparent;
+}
+
+.edit:hover {
+  background-color: var(--seventh-gray);
+}
+
+/* .product-details h2 {
+  font: 700;
+  color: var(--white);
+  margin: 1rem 0;
+} */
+
+/* bELOW 1150px IS A PROBLEM*/
+@media screen and (max-width: 850px) {
+  .products_grid {
+    grid-template-columns: repeat(2, minmax(15rem, 1fr));
+  }
+
+  .edit {
+    padding: 10px 1.5rem;
+    color: var(--primary-gray4);
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .products_grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .edit {
+    padding: 10px 1.5rem;
+    color: var(--primary-gray4);
+    background-color: transparent;
+  }
+
+  .product_details {
+    width: 20rem;
+  }
+}

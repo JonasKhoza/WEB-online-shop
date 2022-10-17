@@ -1,0 +1,18 @@
+GET http://localhost:5000/admin/all-products
+
+###
+
+GET http://localhost:5000/admin/all-products/new
+
+
+###
+POST http://localhost:5000/admin/all-products/new
+Content-Type: application/json
+
+{
+   "title": "Jonah",
+   "summary": "Its a test",
+   "price": 3,
+   "description": "This is a desc",
+   "stockNumber": 10
+}

@@ -1,0 +1,138 @@
+footer {
+  width: 100%;
+  margin-top: -100px;
+  background-color: var(--sixth-gray);
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font: inherit;
+}
+/* footer p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(102, 101, 101);
+  display: block;
+} */
+
+/* footer {
+  width: 90%;
+  max-width: 70rem;
+  background: linear-gradient(to right, var(--footer2), var(--footer)); 
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font: inherit;
+} */
+
+footer .first_footer {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+footer .logo a {
+  font-weight: 900;
+  color: var(--unique);
+  text-decoration: none;
+  font: inherit;
+  font-size: 3.5rem;
+  text-shadow: 1px 1px 1px var(--primary-gray6);
+}
+
+footer .first_footer p {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 1px var(--five-gray);
+}
+
+footer .hr {
+  width: 80%;
+  background-color: var(--primary-gray5);
+}
+
+footer address {
+  width: 90%;
+  max-width: 70rem;
+  gap: 10rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font: inherit;
+}
+
+footer address .time {
+  margin-top: 1rem;
+  color: var(--white);
+}
+
+footer address .time h4 {
+  font: inherit;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-shadow: 1px 1px 1px var(--five-gray);
+}
+
+footer address .time p {
+  font: inherit;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 0.5px var(--five-gray);
+}
+footer address .social_media {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+footer address .social_media ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+footer address .social_media ul li:last-child img {
+  width: 2.5rem;
+}
+
+footer address .social_media p {
+  font: inherit;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 0.5px var(--five-gray);
+}
+footer address .social_media .privacy_statement a {
+  text-decoration: none;
+  color: var(--unique);
+}
+
+@media screen and (max-width: 850px) {
+  footer address {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  footer .logo a {
+    font-size: 2.5rem;
+  }
+
+  footer .first_footer p {
+    font-size: 1.2rem;
+  }
+
+  footer address .time h4 {
+    font-size: 1.2rem;
+  }
+
+  footer address .time p {
+    font-size: 1rem;
+  }
+
+  footer address .privacy_statement a {
+    font-size: 0.8rem;
+    color: var(--unique);
+  }
+}

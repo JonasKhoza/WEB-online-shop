@@ -1,0 +1,105 @@
+form {
+  width: 50%;
+  padding: 1rem 4rem;
+  font: inherit;
+  background-color: var(--sixth-gray);
+  border-radius: 3px;
+}
+
+p {
+  text-align: center;
+  font: inherit;
+  margin: 0.6rem 0;
+}
+
+p label {
+  font: inherit;
+  color: var(--white);
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem 0;
+  border: none;
+  border-radius: 3px;
+  font: inherit;
+}
+
+input:focus {
+  outline: none;
+}
+hr {
+  margin-top: 1rem;
+  width: 100%;
+  font: inherit;
+}
+button {
+  border: none;
+  font: inherit;
+  color: var(--first-gray);
+  background-color: var(--primary-gray1);
+  border-radius: 3px;
+  padding: 0.6rem 1.5rem;
+  margin: 0 0.5rem;
+}
+
+p a {
+  text-decoration: none;
+  color: var(--primary-gray2);
+  font: inherit;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  font-size: 1.1rem;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.image-preview {
+  width: 10rem;
+  display: flex;
+  margin: 0.5rem;
+}
+
+.image-preview .file {
+  width: 4rem;
+  margin: 0 0.5rem;
+}
+
+.image-preview img {
+  width: 6rem;
+}
+
+.previewBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.imagePicker {
+  width: 12rem;
+}
+
+.previewer {
+  width: 8rem;
+  height: 6rem;
+  object-fit: cover;
+  display: none;
+}
+
+.display {
+  display: block;
+}
+
+form span {
+  color: black;
+  position: relative;
+  top: -28px;
+  left: 385px;
+  font-size: 14px;
+  cursor: pointer;
+}
